@@ -59,6 +59,9 @@
   .tagrows dt{font-size:.7rem; font-weight:700; color:var(--ink-3)}
   .tagrows dd{margin:0; display:flex; flex-wrap:wrap; gap:6px; align-items:center}
   .tag[title]{cursor:help}
+  .strengths{display:grid; gap:5px; margin:0; padding:0; list-style:none; width:100%}
+  .strengths li{display:flex; flex-wrap:wrap; align-items:baseline; gap:4px 9px}
+  .strengths .why{font-size:.78rem; color:var(--ink-2)}
   .tag small{font-size:.64rem; font-weight:700; color:var(--ink-3); margin-right:5px; letter-spacing:.02em}
 
   .tag.weak{background:transparent; box-shadow:inset 0 0 0 1px #D4D4D2; color:var(--ink-3)}
@@ -131,10 +134,10 @@
   .lane .ld{margin:0; font-size:.8rem; color:var(--ink-2); line-height:1.5}
 
   /* 맺음 말풍선 */
-  .closing{display:flex; align-items:center; gap:14px; margin:30px 0 0}
+  .closing{display:flex; flex-direction:row-reverse; align-items:center; gap:14px; margin:30px 0 0}
   .avatar{width:58px; height:58px; border-radius:50%; object-fit:cover; object-position:50% 18%; flex:none; border:2px solid var(--accent)}
   .bubble{position:relative; margin:0; padding:12px 18px; background:var(--accent-deep); color:#fff; border-radius:16px; font-size:.98rem; font-weight:700; letter-spacing:-.02em; line-height:1.5}
-  .bubble::before{content:""; position:absolute; left:-7px; top:50%; width:14px; height:14px; background:var(--accent-deep); transform:translateY(-50%) rotate(45deg); border-radius:2px}
+  .bubble::before{content:""; position:absolute; right:-7px; top:50%; width:14px; height:14px; background:var(--accent-deep); transform:translateY(-50%) rotate(45deg); border-radius:2px}
   .projects{display:grid; grid-template-columns:1.65fr 1fr; gap:14px; align-items:start}
   .pj{border:1px solid var(--line); border-radius:8px; padding:16px 18px 14px; min-width:0; scroll-margin-top:16px}
   .pj-top{display:flex; flex-wrap:wrap; align-items:center; gap:6px 8px}
@@ -228,11 +231,13 @@
           <span class="tag">#기업자금조달</span><span class="tag">#신용분석</span><span class="tag">#증권신고서</span><span class="tag">#가치평가</span><span class="tag">#재무제표</span>
         </dd></div>
         <div><dt>강점</dt><dd>
-          <span class="tag" title="AI를 활용해 처음 해 보는 가치평가 모델을 나흘 만에 제작">#처음_해_보는_일도_끝까지</span>
-          <span class="tag" title="모델 셀을 3색으로 나눠 개발 담당과 기준 공유">#같은_기준으로_소통</span>
-          <span class="tag" title="결과물 수치를 DART 원자료와 하나씩 대조 · 맡은 몫만 적음 · 계획한 자격증 3개를 기한 안에 취득">#숫자는_원천부터</span>
-          <span class="tag" title="서비스 사용자인 애널리스트 인터뷰를 팀에 제안해 대면 진행">#사용자_고충부터</span>
-          <span class="tag" title="신용분석사 · 투자자산운용사 · 재경관리사 · CPA 준비 3년 · KDA 568시간">#자격증_3종_CPA_3년</span>
+          <ul class="strengths">
+          <li><span class="tag">#처음_해_보는_일도_끝까지</span><span class="why">AI를 활용해 처음 해 보는 가치평가 모델을 나흘 만에 제작</span></li>
+          <li><span class="tag">#같은_기준으로_소통</span><span class="why">모델 셀을 3색으로 나눠 개발 담당과 기준 공유</span></li>
+          <li><span class="tag">#숫자는_원천부터</span><span class="why">결과물 수치를 DART 원자료와 하나씩 대조</span></li>
+          <li><span class="tag">#사용자_고충부터</span><span class="why">서비스 사용자인 애널리스트 인터뷰를 팀에 제안해 대면 진행</span></li>
+          <li><span class="tag">#자격증_3종_CPA_3년</span><span class="why">신용분석사 · 투자자산운용사 · 재경관리사 · KDA 568시간</span></li>
+          </ul>
         </dd></div>
       </dl>
     </div>
@@ -251,7 +256,7 @@
       <div class="lane-h"><b>ECM</b><span>IPO · 유상증자 등 자본시장을 통한 성장 자금</span></div>
       <ol>
         <li><span class="no">01</span><p class="lt">자본시장을 읽는 기초</p><p class="cs"><span class="c">투자자산운용사</span><span class="c">TESAT 1급</span></p><p class="ld">증권의 종류 · 가치평가 · 포트폴리오 이론을 금융상품 단위로 정리</p></li>
-        <li><span class="no">02</span><p class="lt">기업을 숫자로 분석하고 제안</p><p class="cs"><span class="c">REFLO 가치평가 모델</span><span class="c">심사 유인물 총괄</span></p><p class="ld">목표주가 → PER → EPS → 매출 역산과 민감도 분석으로 기업 가치를 설명</p></li>
+        <li><span class="no">02</span><p class="lt">기업을 숫자로 분석하고 제안</p><p class="cs"><span class="c">REFLO 가치평가 모델</span><span class="c">발표 유인물 총괄</span></p><p class="ld">목표주가 → PER → EPS → 매출 역산과 민감도 분석으로 기업 가치를 설명</p></li>
         <li><span class="no">03</span><p class="lt">기한 안에 끝까지 수행</p><p class="cs"><span class="c">REFLO · 5팀 중 1위</span></p><p class="ld">결과물을 DART와 대조하며 개발 담당과 같은 기준으로 수정을 반복</p></li>
       </ol>
     </section>
@@ -359,7 +364,7 @@
         <div><dt>역할</dt><dd>가치평가 모델 · 결과물 검증 · 서비스 흐름 설계 <em>· 6인 팀</em></dd></div>
         <div><dt>한 일</dt><dd><ul>
           <li>AI를 활용해 처음 해 보는 <b>가치평가 모델을 나흘 만에 직접 제작</b><br><em>대덕전자 · ISC · 목표주가 → PER → EPS → 매출 역산 · 민감도 분석</em></li>
-          <li>결과물 수치를 <b>DART 원자료와 대조</b> → 오류 전달 · 수정 반복 · 심사 배포 유인물 총괄</li>
+          <li>결과물 수치를 <b>DART 원자료와 대조</b> → 오류 전달 · 수정 반복 · 발표 유인물 총괄</li>
           <li>목표 배수 · 할인율 등 판단 값은 입력으로 열어 두고, 셀을 3색으로 나눠 개발 담당과 기준 공유</li>
           <li>애널리스트 인터뷰 2건을 팀에 제안해 대면 진행 → 반도체 제조업으로 분석 범위 축소</li>
         </ul></dd></div>
