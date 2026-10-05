@@ -42,6 +42,12 @@
   /* ── 머리 ── */
   .eyebrow{margin:0 0 10px; font-size:.78rem; font-weight:600; color:var(--ink-3); letter-spacing:.02em}
   h1{margin:0; padding-bottom:10px; border-bottom:1px solid var(--line); font-size:clamp(1.9rem,4.4vw,2.6rem); font-weight:800; letter-spacing:-.035em; line-height:1.2}
+  .title-row{display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-end; gap:6px 20px; padding-bottom:10px; border-bottom:1px solid var(--line)}
+  .title-row h1{padding-bottom:0; border-bottom:0}
+  .contact{display:flex; flex-wrap:wrap; gap:4px 14px; margin:0 0 4px; font-size:.82rem; font-weight:600}
+  .contact a{color:var(--ink-2); text-decoration:none}
+  .contact a::before{content:"✉"; margin-right:5px; color:var(--accent)}
+  .contact a:hover{color:var(--accent-deep)}
   h1 .bar{font-weight:300; color:var(--accent); margin:0 .2em}
 
   /* 사진은 증명사진 원본(파란 배경) */
@@ -218,7 +224,10 @@
     <p class="eyebrow">교보증권 지원 · 2026.10</p>
     <nav class="nav" aria-label="목차"><a href="#fit">ECM · DCM</a><a href="#timeline">TIMELINE</a><a href="#projects">PROJECTS</a><a href="#skills">SKILLS</a></nav>
   </div>
-  <h1>김예린<span class="bar">|</span>본사영업 IB</h1>
+  <div class="title-row">
+    <h1>김예린<span class="bar">|</span>본사영업 IB</h1>
+    <p class="contact"><a href="mailto:kyr0813kim@gmail.com">kyr0813kim@gmail.com</a><a href="mailto:kyr0813kim@naver.com">kyr0813kim@naver.com</a></p>
+  </div>
 
   <section class="intro">
     <img class="photo" src="assets/profile.jpg" alt="김예린 증명사진">
