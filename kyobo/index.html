@@ -71,7 +71,7 @@
   .facts dd{margin:0; font-size:1.06rem; font-weight:800; letter-spacing:-.02em; font-variant-numeric:tabular-nums; white-space:nowrap}
   .facts dd small{font-size:.74rem; font-weight:600; color:var(--ink-3)}
 
-  .sec{display:flex; align-items:baseline; gap:12px; margin:26px 0 12px; font-size:1.05rem; font-weight:800; letter-spacing:.02em; color:var(--accent)}
+  .sec{display:flex; align-items:baseline; gap:12px; margin:58px 0 16px; font-size:1.05rem; font-weight:800; letter-spacing:.02em; color:var(--accent)}
   .sec small{font-size:.74rem; font-weight:500; color:var(--ink-3); letter-spacing:0}
 
   /* ── 가로 타임라인 ── */
@@ -134,7 +134,7 @@
   .lane .ld{margin:0; font-size:.8rem; color:var(--ink-2); line-height:1.5}
 
   /* 맺음 말풍선 */
-  .closing{display:flex; flex-direction:row-reverse; align-items:center; gap:14px; margin:30px 0 0}
+  .closing{display:flex; flex-direction:row-reverse; align-items:center; gap:14px; margin:52px 0 0}
   .avatar{width:58px; height:58px; border-radius:50%; object-fit:cover; object-position:50% 18%; flex:none; border:2px solid var(--accent)}
   .bubble{position:relative; margin:0; padding:12px 18px; background:var(--accent-deep); color:#fff; border-radius:16px; font-size:.98rem; font-weight:700; letter-spacing:-.02em; line-height:1.5}
   .bubble::before{content:""; position:absolute; right:-7px; top:50%; width:14px; height:14px; background:var(--accent-deep); transform:translateY(-50%) rotate(45deg); border-radius:2px}
@@ -198,6 +198,7 @@
   }
   @media (max-width:620px){
     .page{padding:30px 16px 26px}
+    .sec{margin:42px 0 12px}
     .skills > div{grid-template-columns:1fr; gap:6px}
     .bubble{font-size:.88rem}
     .sk{white-space:normal}
