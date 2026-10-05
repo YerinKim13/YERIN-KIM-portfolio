@@ -41,10 +41,10 @@
   h1{margin:0; padding-bottom:10px; border-bottom:1px solid var(--line); font-size:clamp(1.9rem,4.4vw,2.6rem); font-weight:800; letter-spacing:-.035em; line-height:1.2}
   h1 .bar{font-weight:300; color:var(--ink-3); margin:0 .2em}
 
-  /* 사진은 배경을 지운 PNG. 아래 구분선 위에 서 있도록 아래쪽 여백 없이 붙인다 */
+  /* 사진은 증명사진 원본(파란 배경) */
   .intro{display:grid; grid-template-columns:190px 1fr auto; gap:36px; align-items:center; padding:18px 0 0; border-bottom:1px solid var(--line)}
   .intro > div, .intro > .facts{padding-bottom:22px}
-  .photo{width:190px; height:auto; display:block; align-self:end}
+  .photo{width:170px; height:auto; display:block; align-self:center; margin-bottom:22px; border-radius:6px}
   .pitch{margin:0; font-size:clamp(1.12rem,2.2vw,1.38rem); font-weight:700; line-height:1.5; letter-spacing:-.03em}
   .pitch mark{background:linear-gradient(transparent 58%, #E2E2DF 58%); color:inherit; padding:0 .1em}
   .pitch .soft{display:block; margin-top:8px; font-size:.95rem; font-weight:500; color:var(--ink-2); letter-spacing:-.02em; max-width:38rem}
@@ -113,7 +113,7 @@
 
   /* ── 프로젝트 상세 ── */
   /* IB FIT — 교보 IB 직무소개의 필요 역량 ↔ 근거 */
-  .fit{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border-top:1px solid var(--ink); border-bottom:1px solid var(--line)}
+  .fit{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); border-top:1px solid var(--ink); border-bottom:1px solid var(--line)}
   .fit > div{padding:12px 14px 14px 0; min-width:0}
   .fit > div + div{padding-left:14px; border-left:1px solid var(--line)}
   .fit .need{margin:0; font-size:.7rem; font-weight:700; color:var(--ink-3); letter-spacing:.01em}
@@ -172,14 +172,11 @@
 
   @media (max-width:980px){
     .intro{grid-template-columns:160px 1fr; gap:26px}
-    .photo{width:160px}
+    .photo{width:140px; margin-bottom:16px}
     .intro > div{padding-bottom:16px}
     .facts{grid-column:1 / -1; grid-template-columns:repeat(5,auto); justify-content:start; padding:14px 0 16px !important; border-left:0; border-top:1px solid var(--line); background:var(--bg); position:relative}
     .swipe{display:block}
     .projects{grid-template-columns:1fr}
-    .fit{grid-template-columns:repeat(2,minmax(0,1fr))}
-    .fit > div:nth-child(3){padding-left:0; border-left:0}
-    .fit > div:nth-child(n+3){border-top:1px solid var(--line)}
   }
   @media (max-width:620px){
     .page{padding:30px 16px 26px}
@@ -189,7 +186,7 @@
     .skills > div{grid-template-columns:1fr; gap:6px}
     .sk{white-space:normal}
     .intro{grid-template-columns:120px 1fr; gap:16px; align-items:end}
-    .photo{width:120px}
+    .photo{width:110px; margin-bottom:12px}
     .intro > div{padding-bottom:12px}
     .pitch .soft{display:none}
     .facts{grid-template-columns:repeat(3,auto); gap:10px 18px}
@@ -204,10 +201,10 @@
     <p class="eyebrow">교보증권 본사영업 지원 · 2026.10</p>
     <nav class="nav" aria-label="목차"><a href="#fit">IB FIT</a><a href="#timeline">TIMELINE</a><a href="#projects">PROJECTS</a><a href="#skills">SKILLS</a></nav>
   </div>
-  <h1>김예린<span class="bar">|</span>IB · 기업금융</h1>
+  <h1>김예린<span class="bar">|</span>본사영업 IB</h1>
 
   <section class="intro">
-    <img class="photo" src="assets/profile-cutout.png" alt="김예린 증명사진">
+    <img class="photo" src="assets/profile.jpg" alt="김예린 증명사진">
     <div>
       <p class="pitch">
         좋은 회사에 적절히 자금이 흘러가도록, <mark>숫자부터 정확히</mark> 읽습니다.
@@ -241,27 +238,17 @@
   <p class="sec" id="fit">IB FIT <small>교보증권 IB 직무소개의 필요 역량과 제 근거</small></p>
   <div class="fit">
     <div>
-      <p class="need"><b>DCM</b> · 자금조달 구조 분석 능력</p>
-      <p class="ev-t">공모 회사채 한 건을 DART로 추적</p>
-      <p class="ev-s">증권신고서 → 증권발행실적보고서까지 발행 과정을 문서로 확인 · CPA 재무관리 3년</p>
-    </div>
-    <div>
       <p class="need"><b>ECM</b> · 기업 분석 및 제안 능력</p>
       <p class="ev-t">가치평가 모델 직접 제작</p>
       <p class="ev-s">REFLO · 목표주가 → PER → EPS → 매출 역산과 민감도 분석 · 대덕전자 · ISC</p>
     </div>
     <div>
-      <p class="need"><b>구조화 · PF</b> · 투자 분석 및 심사 능력</p>
-      <p class="ev-t">신용분석사</p>
-      <p class="ev-s">재무제표를 주석과 연결해 읽고 안정성 · 수익성 지표로 상환능력 판단</p>
-    </div>
-    <div>
-      <p class="need"><b>공통</b> · 숫자의 정확성</p>
-      <p class="ev-t">결과물 수치를 원자료와 대조</p>
-      <p class="ev-s">REFLO 출력값을 DART와 하나씩 맞춰 보고 오류를 고쳐 심사 유인물로 배포</p>
+      <p class="need"><b>DCM</b> · 자금조달 구조 분석 능력</p>
+      <p class="ev-t">공모 회사채 한 건을 DART로 추적</p>
+      <p class="ev-s">증권신고서 → 증권발행실적보고서까지 발행 과정을 문서로 확인 · CPA 재무관리 3년</p>
     </div>
   </div>
-  <p class="fit-note">앞의 세 칸 역량 이름은 교보증권 채용 홈페이지 「직무소개 · IB」의 필요 역량에서 가져왔습니다.</p>
+  <p class="fit-note">두 칸의 역량 이름은 교보증권 채용 홈페이지 「직무소개 · IB」의 필요 역량에서 가져왔습니다.</p>
 
   <p class="sec" id="timeline">TIMELINE <small>간격은 기간 비율이 아니라 순서 기준입니다 · 굵은 축이 2026년</small></p>
   <div class="htl-wrap">
