@@ -77,16 +77,16 @@
   /* ── 가로 타임라인 ── */
   .htl-wrap{overflow-x:auto; padding:0 0 6px 10px; scroll-snap-type:x proximity}
   .htl{
-    --n:11;
-    display:grid; grid-template-columns:repeat(var(--n), minmax(92px,1fr));
+    --n:12;
+    display:grid; grid-template-columns:repeat(var(--n), minmax(88px,1fr));
     grid-template-rows:auto 34px auto 18px auto auto auto;
-    min-width:980px; position:relative;
+    min-width:1060px; position:relative;
   }
   /* 축 */
   .axis{grid-column:1 / -1; grid-row:2; position:relative}
   .axis::before{content:""; position:absolute; left:0; right:0; top:50%; height:1px; background:var(--rail)}
-  .axis .now{position:absolute; top:50%; height:3px; transform:translateY(-50%); background:var(--accent); left:calc(100% / 11 * 5); right:calc(100% / 11 * 1)}
-  .axis .now-lbl{position:absolute; right:calc(100% / 11 * 1); top:-2px; transform:translateX(100%); padding-left:8px; font-family:var(--mono); font-size:.68rem; color:var(--ink-3)}
+  .axis .now{position:absolute; top:50%; height:3px; transform:translateY(-50%); background:var(--accent); left:calc(100% / 12 * 6); right:calc(100% / 12 * 1)}
+  .axis .now-lbl{position:absolute; right:calc(100% / 12 * 1); top:-2px; transform:translateX(100%); padding-left:8px; font-family:var(--mono); font-size:.68rem; color:var(--ink-3)}
 
   .dot{grid-row:2; position:relative; z-index:1}
   .dot::before{content:""; position:absolute; left:0; top:50%; width:9px; height:9px; border-radius:50%; background:var(--bg); border:2px solid var(--ink-3); transform:translate(-50%,-50%)}
@@ -227,16 +227,11 @@
         <span class="soft">재무제표를 주석과 함께 읽고, 공시로 발행 과정을 따라가며 기업의 자금조달을 돕는 일을 준비해 왔습니다. 입사하면 증권신고서와 심사자료의 숫자를 원자료와 맞춰 보는 일부터 맡겠습니다.</span>
       </p>
       <dl class="tagrows">
-        <div><dt>키워드</dt><dd>
-          <span class="tag">#기업자금조달</span><span class="tag">#신용분석</span><span class="tag">#증권신고서</span><span class="tag">#가치평가</span><span class="tag">#재무제표</span>
-        </dd></div>
         <div><dt>강점</dt><dd>
           <ul class="strengths">
+          <li><span class="tag">#숫자는_원천부터</span><span class="why">REFLO 결과물 수치를 DART 원자료와 하나씩 대조</span></li>
           <li><span class="tag">#처음_해_보는_일도_끝까지</span><span class="why">AI를 활용해 처음 해 보는 가치평가 모델을 나흘 만에 제작</span></li>
-          <li><span class="tag">#같은_기준으로_소통</span><span class="why">모델 셀을 3색으로 나눠 개발 담당과 기준 공유</span></li>
-          <li><span class="tag">#숫자는_원천부터</span><span class="why">결과물 수치를 DART 원자료와 하나씩 대조</span></li>
-          <li><span class="tag">#사용자_고충부터</span><span class="why">서비스 사용자인 애널리스트 인터뷰를 팀에 제안해 대면 진행</span></li>
-          <li><span class="tag">#자격증_3종_CPA_3년</span><span class="why">신용분석사 · 투자자산운용사 · 재경관리사 · KDA 568시간</span></li>
+          <li><span class="tag">#재무제표를_주석까지</span><span class="why">신용분석사 · 투자자산운용사 · 재경관리사 · CPA 준비 3년</span></li>
           </ul>
         </dd></div>
       </dl>
@@ -274,7 +269,7 @@
   <div class="htl-wrap">
     <div class="htl">
 
-      <!-- 축 위 카드 (홀수) -->
+      <!-- 축 위 카드 -->
       <div class="ev up" style="grid-column:1 / span 2">
         <span class="d">2017.03~2020.02</span>
         <p class="t">대원외국어고등학교</p>
@@ -286,20 +281,25 @@
         <p class="s">15학점 전 과목 A+ <em>· 재무관리 · 투자론 · 화폐금융론</em></p>
       </div>
       <div class="ev up" style="grid-column:5 / span 2">
-        <span class="d">2025.04~06</span>
-        <p class="t">회계원리 우수 튜터</p>
-        <p class="s">성균튜터링 <em>· 새내기 2명 · 6회</em></p>
+        <span class="d">3년 · 2024~2026</span>
+        <p class="t">공인회계사 시험 준비</p>
+        <p class="s">회계 · 세법 · 재무관리 <em>· 재무관리 공식 한 장 · 세법 구조도</em></p>
       </div>
       <div class="ev up" style="grid-column:7 / span 2">
-        <span class="d">2026.06</span>
-        <p class="t">신용분석사</p>
-        <p class="s">재무제표를 주석과 연결해 읽고 지표 직접 계산</p>
+        <span class="d">2026.05</span>
+        <p class="t">투자자산운용사 · 재경관리사</p>
+        <p class="s">KDA 종일 수업과 병행 <em>· 5/21 · 5/22</em></p>
       </div>
       <div class="ev up key" style="grid-column:9 / span 2">
-        <span class="d">2026.08</span><span class="badge">5팀 중 1위</span>
-        <p class="t">DAY JA VIEW</p>
-        <p class="s">테마주 이벤트 스터디 서비스 <em>· 기획 · UI/UX · 발표자료</em></p>
-        <a class="go" href="#djv">상세 ↓</a>
+        <span class="d">2026.07</span><span class="badge">5팀 중 1위</span>
+        <p class="t">REFLO</p>
+        <p class="s">리서치 자동화 AI 서비스 <em>· 가치평가 모델 · 결과물 검증</em></p>
+        <a class="go" href="#reflo">상세 ↓</a>
+      </div>
+      <div class="ev up" style="grid-column:11 / span 2">
+        <span class="d">2026.09</span>
+        <p class="t">TESAT 1급</p>
+        <p class="s">265점</p>
       </div>
 
       <!-- 축 -->
@@ -307,48 +307,48 @@
       <div class="dot" style="grid-column:1"><span class="yr">2017</span></div>
       <div class="dot" style="grid-column:2"><span class="yr">2020</span></div>
       <div class="dot" style="grid-column:3"><span class="yr">2022</span></div>
-      <div class="dot" style="grid-column:4"><span class="yr">2024</span></div>
-      <div class="dot" style="grid-column:5"><span class="yr">2025</span></div>
-      <div class="dot" style="grid-column:6"><span class="yr">2026</span></div>
-      <div class="dot" style="grid-column:7"></div>
-      <div class="dot key" style="grid-column:8"></div>
+      <div class="dot" style="grid-column:4"></div>
+      <div class="dot" style="grid-column:5"><span class="yr">2024</span></div>
+      <div class="dot" style="grid-column:6"><span class="yr">2025</span></div>
+      <div class="dot" style="grid-column:7"><span class="yr">2026</span></div>
+      <div class="dot" style="grid-column:8"></div>
       <div class="dot key" style="grid-column:9"></div>
-      <div class="dot" style="grid-column:10"></div>
+      <div class="dot key" style="grid-column:10"></div>
+      <div class="dot" style="grid-column:11"></div>
 
-      <!-- 축 아래 카드 (짝수) -->
+      <!-- 축 아래 카드 -->
       <div class="ev down" style="grid-column:2 / span 2">
         <span class="d">2020.03</span>
         <p class="t">성균관대학교 입학</p>
         <p class="s">경제학 · 경영학(복수전공)</p>
       </div>
       <div class="ev down" style="grid-column:4 / span 2">
-        <span class="d">3년 · 2024~2026</span>
-        <p class="t">공인회계사 시험 준비</p>
-        <p class="s">회계 · 세법 · 재무관리 <em>· 재무관리 공식 한 장 · 세법 구조도</em></p>
+        <span class="d">2022.03~12</span>
+        <p class="t">경제토론학회 SEDA</p>
+        <p class="s">세미나 17회 · 발제문 3건 · 우수 발제원<br><em>내부자거래 · 증권거래세 폐지 · 대출만기 연장</em></p>
       </div>
       <div class="ev down" style="grid-column:6 / span 2">
-        <span class="d">2026.05</span>
-        <p class="t">투자자산운용사 · 재경관리사</p>
-        <p class="s">KDA 종일 수업과 병행 <em>· 5/21 · 5/22</em></p>
+        <span class="d">2025.04~06</span>
+        <p class="t">회계원리 우수 튜터</p>
+        <p class="s">성균튜터링 <em>· 새내기 2명 · 6회</em></p>
       </div>
-      <div class="ev down key" style="grid-column:8 / span 2">
-        <span class="d">2026.07</span><span class="badge">5팀 중 1위</span>
-        <p class="t">REFLO</p>
-        <p class="s">리서치 자동화 AI 서비스 <em>· 가치평가 모델 · 결과물 검증</em></p>
-        <a class="go" href="#reflo">상세 ↓</a>
+      <div class="ev down" style="grid-column:8 / span 2">
+        <span class="d">2026.06</span>
+        <p class="t">신용분석사</p>
+        <p class="s">재무제표를 주석과 연결해 읽고 지표 직접 계산</p>
       </div>
-      <div class="ev down" style="grid-column:10 / span 2">
-        <span class="d">2026.09</span>
-        <p class="t">TESAT 1급</p>
-        <p class="s">265점</p>
+      <div class="ev down key" style="grid-column:10 / span 2">
+        <span class="d">2026.08</span><span class="badge">5팀 중 1위</span>
+        <p class="t">DAY JA VIEW</p>
+        <p class="s">테마주 이벤트 스터디 서비스 <em>· 기획 · UI/UX · 발표자료</em></p>
+        <a class="go" href="#djv">상세 ↓</a>
       </div>
 
       <!-- 기간 막대 -->
-      <div class="span" style="grid-row:5; grid-column:2 / 10"><b>성균관대학교</b>경제학 · 경영학 · 4.33 / 4.5 · 2026.08 졸업</div>
-      <div class="span" style="grid-row:6; grid-column:4 / 6"><b>CPA 준비</b>3년</div>
-      <div class="span dark" style="grid-row:6; grid-column:6 / 10"><b>키움 디지털 아카데미 4기</b>568시간 · 2026.05~08</div>
-      <div class="span" style="grid-row:7; grid-column:3 / 4"><b>SEDA</b>2022</div>
-      <div class="span" style="grid-row:7; grid-column:4 / 6; background:transparent; padding-left:0; color:var(--ink-3); font-weight:500">학생회 COUNT 재정국 차장 · 밴드 드럼</div>
+      <div class="span" style="grid-row:5; grid-column:2 / 11"><b>성균관대학교</b>경제학 · 경영학 · 4.33 / 4.5 · 2026.08 졸업</div>
+      <div class="span" style="grid-row:6; grid-column:5 / 7"><b>CPA 준비</b>3년</div>
+      <div class="span dark" style="grid-row:6; grid-column:7 / 11"><b>키움 디지털 아카데미 4기</b>568시간 · 2026.05~08</div>
+      <div class="span" style="grid-row:7; grid-column:3 / 7; background:transparent; padding-left:0; color:var(--ink-3); font-weight:500">2022 · 학생회 COUNT 재정국 차장 · 밴드 드럼</div>
     </div>
   </div>
   <p class="swipe">← 옆으로 넘겨 보기 →</p>
